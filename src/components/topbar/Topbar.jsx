@@ -1,5 +1,5 @@
 import "./topbar.scss"
-import {Person, Mail} from "@material-ui/icons"
+import {Phone, Mail} from "@material-ui/icons"
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
@@ -8,7 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 <div className="left">
                     <a href="#intro" className="logo">collier.</a>
                     <div className="itemContainer">
-                        <Person className="icon" />
+                        <Phone className="icon" />
                         <span>770 595 6304</span>
                     </div>
                     <div className="itemContainer">
