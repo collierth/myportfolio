@@ -24,9 +24,6 @@
         -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-
         @-webkit-keyframes slide-in-top {
             0% {
             -webkit-transform: translateY(-1000px);
@@ -58,18 +55,17 @@
         }
 
         .icon {
-            font-size: 20px;
             color: inherit;
             &:hover {
                 color: black;
-            }
+            } 
         }
 
-        .img {
+        /*.img {
             width: 70px;
             height: 70px;
 
-        }
+        }*/
 
     }
   

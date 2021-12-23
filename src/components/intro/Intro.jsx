@@ -6,12 +6,12 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="wrapper">
                 <center>
-                <img src="assets/chlogo.png" alt="" className="img"/>
+                {/*<img src="assets/chlogo.png" alt="" className="img"/>*/}
                 <h2>Hi, I'm</h2>
                 <h1>Collier Hawkins</h1>
-                <br></br>
+                <br/>
                 <h4 className="caption">Learn more about me</h4>
-                <a href="#portfolio" className="icon"><KeyboardArrowDownSharp/></a>
+                <a href="#about" className="icon"><KeyboardArrowDownSharp style={{ fontSize: 50 }}/></a>
                 </center>
             </div>
         </div>
