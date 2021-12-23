@@ -5,19 +5,14 @@
 
     /* ff 3.6+ */
     background:-moz-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%); 
-
     /* safari 5.1+,chrome 10+ */
     background:-webkit-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
-
     /* opera 11.10+ */
     background:-o-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
-
     /* ie 6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBB03B', endColorstr='#D4145A', GradientType=0 );
-
     /* ie 10+ */
     background:-ms-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
-
     /* global 94%+ browsers support */
     background:linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
 
@@ -28,7 +23,10 @@
 
         -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
         @-webkit-keyframes slide-in-top {
             0% {
             -webkit-transform: translateY(-1000px);
@@ -54,5 +52,25 @@
             }
         }
 
+        .caption {
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .icon {
+            font-size: 20px;
+            color: inherit;
+            &:hover {
+                color: black;
+            }
+        }
+
+        .img {
+            width: 70px;
+            height: 70px;
+
+        }
+
     }
+  
 }
