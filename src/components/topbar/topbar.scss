@@ -3,12 +3,21 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: black;
     position: fixed;
     top: 0;
     z-index: 3;
     transition: all 1s ease;
+
+    /*
+     background:-moz-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%); 
+     background:-webkit-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
+     background:-o-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBB03B', endColorstr='#D4145A', GradientType=0 );
+     background:-ms-linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
+     background:linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
+    */ 
 
     .wrapper {
         padding: 10px 30px;
@@ -22,9 +31,10 @@
             align-items: center;
 
             .img {
-                width: 50px;
-                height: 50px;
-
+                width: 40px;
+                height: 40px;
+                overflow: hidden;   
+                
                 &:hover 
                 {
                     -webkit-animation: jello-horizontal 0.9s both;
@@ -90,8 +100,6 @@
                                 transform: scale3d(1, 1, 1);
                         }
                     }
-  
-
                 }
             }
             
@@ -129,7 +137,7 @@
         .right {
             .hamburger {
                 width: 32px;
-                height: 25px;
+                height: 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -138,10 +146,11 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: white;
+                    background-color: black;
                     transform-origin: left;
                     transition: all 2s ease;
                 }
+                
             }
         }
     }
@@ -154,19 +163,25 @@
             span {
                 &:first-child {
                     background-color: white;
-                    transform: rotate(45deg);
+                    //transform: rotate(45deg);
                 }
                 &:nth-child(2) {
-                    opacity: 0;
+                    background-color: white;
                 }
                 &:last-child {
                     background-color: white;
-                    transform: rotate(-45deg);
+                    //transform: rotate(-45deg);
                 }
             }
         }
 
         .left {
+
+            .img {
+                filter: invert(100%);
+                -webkit-filter: invert(100%);
+            }
+            
             .itemContainer {
                 .icon {
                     color: white;

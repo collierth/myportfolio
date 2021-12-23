@@ -1,12 +1,12 @@
-import "./topbar.scss"
-import {Phone, Mail} from "@material-ui/icons"
+import "./topbar.scss";
+import {Phone, Mail} from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro"><img src="assets/chlogo.png" alt="" className="img"/></a>
+                    <a href="#intro"><img src="assets/chlogo-black.png" alt="" className="img"/></a>
                     <div className="itemContainer">
                         <Phone className="icon" />
                         <span>770 595 6304</span>
