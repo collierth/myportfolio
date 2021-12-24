@@ -5,39 +5,25 @@
     align-items: center;
 
     .icon {
-        color: inherit;
+        color: rgb(80, 79, 79);
         &:hover {
-            color: rgba(251, 176, 59, 1);
+            color: black;
         } 
     }
 
     h1 {
+        
         font-size: 50px;
-  
+        font-weight: 300;
     }
 
-    ul {
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
-
-        li {
-            font-size: 14px;
-            margin-right: 50px;
-            padding: 7px;
-            border-radius: 10px;
-            cursor: pointer;
-
-            &.active {
-                background-color: black;
-                color: white;
-            }
-        }
+    h4 {
+        font-size: 20px;
+        font-weight: 200;
     }
 
     .container {
-        width: 70%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,26 +33,60 @@
             width: 120px;
             height: 100px;
             border-radius: 20px;
-            border: 1px solid lightgray;
-            margin: 10px 20px;
+            margin: 20px 30px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             position: relative;
+            background-color: lightgray;
 
             h3 {
                 position: absolute;
                 font-size: 20px;
-                color: black;
+                color: rgb(80, 79, 79);
             }
 
-            img {
-                width: 55px;
-                height: 80px;
-                object-fit: cover;
-                z-index: 1;
+            &:hover {
+                
+            }
+        }
 
+        .item2 {
+            width: 100px;
+            height: 60px;
+            border-radius: 15px;
+            margin: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            background-color: lightgray;
+
+            h3 {
+                position: absolute;
+                font-size: 15px;
+                color: rgb(80, 79, 79);
+            }
+        }
+
+        .item3 {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            margin: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            background-color: lightgray;
+
+            h3 {
+                position: absolute;
+                font-size: 15px;
+                color: rgb(80, 79, 79);
             }
         }
     }
