@@ -6,6 +6,7 @@
     
     .left {
         flex: 0.5;
+        margin-top: 30px;
         overflow: hidden;
         
         .imgContainer {
@@ -17,6 +18,24 @@
             align-items: flex-end;
             justify-content: center;
             float: left;
+            
+            /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076D4', endColorstr='#9500FF', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%);
 
             img {
                 height: 70%;
@@ -51,8 +70,12 @@
                 color: rgb(80, 70, 70);
             }
 
-
+            p {
+                font-weight: 300;
+                font-size: 20px;
+            }
         }
+        
     }
     
 }

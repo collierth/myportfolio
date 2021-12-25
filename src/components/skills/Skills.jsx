@@ -33,11 +33,11 @@ export default function Skills() {
                     <h3>Photoshop</h3>
                 </div>
                 <div className="item3">
-                    <h3>Premiere Pro</h3>
-                </div>      
+                    <h3>Krita</h3>
+                </div>
             </div>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <a href="#works" className="icon"><KeyboardArrowDownSharp style={{ fontSize: 50 }}/></a>
+            <a href="#projects" className="icon"><KeyboardArrowDownSharp style={{ fontSize: 50 }}/></a>
         </div>
     )
 }

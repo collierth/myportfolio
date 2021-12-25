@@ -15,8 +15,9 @@ export default function About() {
                     <h2>I'm a</h2>
                     <h1>Computer Science Major</h1>
                     <h2>at Georgia State University<School/></h2>
-                    <h3></h3>
-                    <a href="#skills" className="icon"><KeyboardArrowDownSharp style={{ fontSize: 50 }}/></a>
+                    <br/>
+                    <p>I am interested in creating rich and responsive UI/UX applications 
+                        <br></br>with a focus in front-end web development.</p>
                 </div>
             </div>
         </div>
