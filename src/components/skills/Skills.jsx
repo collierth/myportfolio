@@ -33,6 +33,9 @@ export default function Skills() {
                     <h3>Photoshop</h3>
                 </div>
                 <div className="item3">
+                    <h3>Premiere Pro</h3>
+                </div>
+                <div className="item3">
                     <h3>Krita</h3>
                 </div>
             </div>
