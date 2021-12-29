@@ -42,6 +42,7 @@
         display: flex;
         position: absolute;
         left: 0;
+        transition: all 1s ease-in-out;
 
         .container {
             width: 100vw;
@@ -76,10 +77,15 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-color: chocolate;
+                            background-color: white;
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
 
                         }
 
@@ -110,7 +116,7 @@
                             margin-top: 10px;
                             margin-left: 80px;
 
-                                                        /* ff 3.6+ */
+                            /* ff 3.6+ */
                             background:-moz-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%); 
                             /* safari 5.1+,chrome 10+ */
                             background:-webkit-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%);
@@ -142,11 +148,12 @@
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
+                    background-color: white;
 
                     img {
-                        width: 500px;
-                        height: 350px;
-                        //transform: rotate(-10deg);
+                        width: 425px;
+                        height: 225px;
+                        transform: rotate(-10deg);
                     }
                 }
 
