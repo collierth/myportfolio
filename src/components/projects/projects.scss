@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .projects {
     //background-color: crimson;
     display: flex;
@@ -10,6 +12,10 @@
         position: absolute;
         color: white;
         cursor: pointer;
+
+        @include mobile {
+            display: none;
+        }
 
         &.left {
             left: 100px;
@@ -44,6 +50,12 @@
         left: 0;
         transition: all 1s ease-in-out;
 
+        @include mobile {
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .container {
             width: 100vw;
             display: flex;
@@ -59,12 +71,22 @@
                 align-items: center;
                 justify-content: center;
 
+                @include mobile {
+                    width: 90%;
+                    height: 180px;
+                    margin: 25px 0;
+                }
+
                 .left {
                     flex: 6;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    @include mobile {
+                        //display: none;
+                    }
 
                     .leftContainer {
                         width: 90%;
@@ -82,9 +104,15 @@
                             align-items: center;
                             justify-content: center;
 
+                            @include mobile {
+                                display: none;
+                            }
+
                             img {
                                 width: 25px;
                                 height: 25px;
+                                
+                              
                             }
 
                         }
@@ -95,6 +123,10 @@
 
                         p {
                             font-size: 13px;
+
+                            @include mobile {
+                                //display: none;
+                            }
                         }
 
                         a {
@@ -115,6 +147,13 @@
                             height: 50px;
                             margin-top: 10px;
                             margin-left: 80px;
+
+                            @include mobile {
+                                width: 75px;
+                                height: 25px;
+                                border-radius: 5px;
+                                display: none;
+                            }
 
                             /* ff 3.6+ */
                             background:-moz-linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%); 
@@ -149,6 +188,10 @@
                     justify-content: center;
                     overflow: hidden;
                     background-color: white;
+
+                    @include mobile {
+                        display: none;
+                    }
 
                     img {
                         width: 425px;

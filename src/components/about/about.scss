@@ -3,6 +3,11 @@
 .about {
     background-color: white;
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
     
     .left {
         flex: 0.5;
@@ -37,8 +42,16 @@
     /* global 94%+ browsers support */
     background:linear-gradient(90deg, rgba(149, 0, 255, 1) 0%, rgba(0, 118, 212, 1) 100%);
 
+            @include mobile {
+                align-items: flex-start;
+            }
+
             img {
                 height: 70%;
+
+                @include mobile {
+                    height: 60%;
+                }
             }
         }
     }
@@ -55,15 +68,29 @@
             flex-direction: column;
             justify-content: center;
 
+            @include mobile {
+                padding-left: 5px;
+                //padding-right: 10px;
+               // align-items: center;
+            }
+
             h1 {
                 font-size: 50px;
                 font-weight: 700;
                 //margin: 10px;
+
+                @include mobile {
+                    font-size: 40px;
+                }
             }
 
             h2 {
                 font-weight: 500;
                 font-size: 30px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
             }
 
             .icon {

@@ -13,7 +13,7 @@ export default function Hobbies() {
             </div>
             <div className="right">
             <h1>Hobbies & Other Interests</h1>
-            <h2>I use my proficiency in playing the piano in my work as a music producer that sells instrumentals to artists. 
+            <h2>I work as a music producer that sells instrumentals to artists and am also proficient in playing the piano. 
                 I enjoy watching movies, writing my own screenplays, and creating artwork in my spare time.</h2>
             </div>
          

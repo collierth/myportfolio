@@ -29,15 +29,26 @@
 
 
         .left {
-
             display: flex;
             align-items: center;
-            overflow: hidden;   
+            overflow: hidden;  
+            justify-content: center; 
+            //background-color: red;;
 
-            .img {
+            a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            //background-color: blue;
+
+            img {
+                align-items: center;
+                overflow: hidden;   
                 width: 40px;
                 height: 40px;
-                overflow: hidden;   
+                //background-color: green;
                 
                 &:hover 
                 {
@@ -106,6 +117,7 @@
                     }
                 }
             }
+        }
             
             /*.logo {
                 font-size: 40px;
@@ -123,6 +135,10 @@
                 display: flex;
                 align-items: center;
                 margin-left: 30px;
+
+                @include mobile {
+                    display: none;
+                }
 
                 .icon {
                     font-size: 18px;
@@ -180,10 +196,11 @@
         }
 
         .left {
-
-            .img {
+            a {
+                img {
                 filter: invert(100%);
                 -webkit-filter: invert(100%);
+                }
             }
             
             .itemContainer {

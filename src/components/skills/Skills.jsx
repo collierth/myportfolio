@@ -40,7 +40,7 @@ export default function Skills() {
                 </div>
             </div>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <a href="#projects" className="icon"><KeyboardArrowDownSharp style={{ fontSize: 50 }}/></a>
+            <a href="#hobbies" className="icon"><KeyboardArrowDownSharp style={{ fontSize: 50 }}/></a>
         </div>
     )
 }
