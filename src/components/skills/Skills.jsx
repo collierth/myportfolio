@@ -20,22 +20,22 @@ export default function Skills() {
                 <div className="item">
                     <h3>HTML</h3>
                 </div>
-                <div className="item2">
+                <div className="item">
                     <h3>Bootstrap</h3>
                 </div>
-                <div className="item2">
+                <div className="item">
                     <h3>Java</h3>
                 </div>
-                <div className="item2">
+                <div className="item">
                     <h3>MySQL</h3>
                 </div>
-                <div className="item3">
+                <div className="item">
                     <h3>Photoshop</h3>
                 </div>
-                <div className="item3">
+                <div className="item">
                     <h3>Premiere Pro</h3>
                 </div>
-                <div className="item3">
+                <div className="item">
                     <h3>Krita</h3>
                 </div>
             </div>

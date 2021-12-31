@@ -21,7 +21,7 @@ export default function Projects() {
             title: "React Web Portfolio",
             sub: "Project",
             desc: "My personal portfolio made with React JS and CSS",
-            img: "assets/intro.PNG",
+            img: "assets/design.png",
             a: "#intro",
             b: "Visit!",
         },
